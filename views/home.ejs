@@ -1,0 +1,30 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <link rel="icon" href="/public/love-logo.svg" type="svg">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Untuk input nama -->
+        <form action="/" method="post">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" placeholder="Your Name" required>
+
+            <label for="partnername">Partner's Name:</label>
+            <input type="text" id="partnername" name="partnername" placeholder="Partner's Name" required>
+
+            <button type="submit">Calculate Love Percentage</button>
+        </form>
+
+        <!-- Output hasil persentase cinta -->
+        <p>Love Percentage: <%= percentage %></p>
+    </div>
+</body>
+</html>
